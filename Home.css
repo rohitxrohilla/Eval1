@@ -1,0 +1,122 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 80vh;
+    color: white;
+}
+
+.section1{
+    background-image: url(images/Black\ and\ Green\ Dark\ Mode\ Sporty\ Modern\ Fitness\ Desktop\ Prototype.png);
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar{
+    width: 98vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navbar .sec1{
+    padding-left: 2rem;
+}
+
+.navbar .sec2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 30vw;
+}
+
+.navbar .sec2 div a{
+    text-decoration: none;
+    color: rgb(207, 209, 211);
+    font-weight: bold;
+    font-size: large;
+}
+
+.sec3 .button{
+    padding: 15px 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+}
+
+.sec3 .button:hover{
+    cursor: pointer;
+}
+
+
+.WhyUs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-left: 2rem;
+}
+
+.WhyUs .content {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    text-align: left;
+    gap: 1rem;
+}
+
+.WhyUs .content h1{
+    font-size: 40px;
+    color: rgb(138, 139, 140);
+    font-weight: 800;
+}
+
+.WhyUs .content div button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.WhyUs .content div button:hover{
+    cursor: pointer;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icons .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
