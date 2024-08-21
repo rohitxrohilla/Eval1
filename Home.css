@@ -1,9 +1,12 @@
-
-
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: bold; */
+    font-style: normal;
+    font-size: 1rem;
 }
 
 body, html {
@@ -13,13 +16,13 @@ body, html {
 }
 
 section {
-    height: 80vh;
+    height: 70vh;
     color: white;
 }
 
 .section1{
     background-image: url(images/Black\ and\ Green\ Dark\ Mode\ Sporty\ Modern\ Fitness\ Desktop\ Prototype.png);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
@@ -69,6 +72,7 @@ section {
 
 
 .WhyUs {
+    padding-top: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -119,4 +123,123 @@ section {
 
 .icon:hover{
     cursor: pointer;
+}
+
+.section2{
+    height: 20vh;
+    color: black;
+    background-color: #c6c4c4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section2>div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+.section2>div .l{
+    font-weight: bold;
+}
+
+.section3{
+    height: 90vh;
+    background-color: rgb(180, 177, 177);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section3 .first{
+    width: 60vw;
+    /* height: 20vh; */
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.section3 .second{
+    /* height: 50vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.section3 .second .left{
+    width: 40vw;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 2rem;
+}
+
+.section3 .second .left .same{
+    display: flex;
+    align-items: center;
+    width: 45%;
+    flex-wrap: wrap;
+}
+
+.section3 .second .left .same>div{
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 .second .left .same>p{
+    padding-left: 2.5rem;
+}
+
+.section3 .second .right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.section3 .second .right .uff{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image{
+    position: relative;
+    height: 125px;
+    border-radius: 10px;
+}
+
+.image2{
+    position: relative;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.image .img1{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.image2 .img1{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
