@@ -6,7 +6,7 @@
     font-optical-sizing: auto;
     /* font-weight: bold; */
     font-style: normal;
-    font-size: 1rem;
+    font-size:medium;
 }
 
 body, html {
@@ -31,7 +31,7 @@ section {
 }
 
 .navbar{
-    width: 98vw;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -282,6 +282,7 @@ section {
 }
 
 .section4 .who div img{
+    box-shadow: 2px 1px 10px black;
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
@@ -317,4 +318,146 @@ section {
     visibility: visible;
     transform: translateY(0);
     transition-delay: 0.1s;
+}
+
+.section5{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background-color: #ece7e7;
+}
+
+.image3 img{
+    position: relative;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.section5 .cont{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    justify-content: left;
+}
+
+.section5 .cont button{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+
+.section5 .cont button:hover{
+    cursor: pointer;
+    background-color: #7f7d7d;
+    color: black;
+}
+
+.section6{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    background-color: #7f7d7d;
+}
+
+.section6 .one{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section6 .one div button{
+    padding: 5px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+
+.section6 .one div button:hover{
+    cursor: pointer;
+    background-color: #7f7d7d;
+    color: black;
+}
+
+.section6 .two{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.section6 .three{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+}
+
+.section6 .three>div{
+    padding: 20px;
+    border-radius: 15px;
+    width: 28%;
+    background-color: rgb(230, 225, 225);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    box-shadow: 5px 10px 5px black;
+}
+
+.section6 .three>div:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out, visibility 0s 0.3s;
+}
+
+.section6 .three>div .plansprice{
+    display: flex;
+    justify-content: center;
+    align-items:first baseline;
+    flex-direction: row;
+}
+
+.section6 .three>div .ticking{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.4rem;
+    color: rgb(96, 96, 96);
+}
+
+.section6 .three>div .ticking>div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.section6 .three>div button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+
+.section6 .three>div button:hover{
+    background-color: #7f7d7d;
+    color: black;
+    cursor: pointer;
 }
