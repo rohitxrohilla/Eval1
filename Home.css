@@ -6,8 +6,18 @@
     font-optical-sizing: auto;
 }
 
+.outer{
+    display: flex;
+    flex-direction: row;
+}
+
+.inner{
+    display: flex;
+    width: 100vw;
+}
+
 body, html {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -33,14 +43,14 @@ section {
 }
 
 .navbar{
-    width: 98vw;
+    width: 96vw;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     box-sizing: border-box;
 }
 
-.navbar .sec1{
+.navbar .sec1 img{
     padding-left: 2rem;
 }
 
@@ -216,7 +226,7 @@ section {
 }
 
 .section3 .second .right{
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
@@ -226,6 +236,10 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.section3 .second .right .uff .also{
+    padding-top: 30px;
 }
 
 .image{
@@ -272,8 +286,8 @@ section {
 
 .section4 .who{
     justify-content: center;
-    align-items:center;
-    gap: 11rem;
+    align-items:center; 
+    gap: 15rem;
     flex-direction: row;
     /* flex-wrap: wrap; */
 }
@@ -380,11 +394,12 @@ section {
 }
 
 .section6 .one div button{
-    padding: 5px 12px;
+    padding: 10px 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: black;
     color: white;
+    font-weight: bold;
 }
 
 
@@ -418,11 +433,11 @@ section {
     justify-content: space-evenly;
     gap: 1rem;
     box-shadow: 5px 10px 5px black;
+    transition: transform 0.3s ease-in-out, visibility 0s 0.3s;
 }
 
 .section6 .three>div:hover{
     transform: scale(1.05);
-    transition: transform 0.3s ease-in-out, visibility 0s 0.3s;
     cursor: pointer;
 }
 
@@ -476,9 +491,9 @@ section {
 }
 
 .section7 .Reviews button{
-    padding: 5px 12px;
+    padding: 10px 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: black;
     color: white;
 }
@@ -578,13 +593,213 @@ footer>div *:hover{
     body {
         font-size: 14px;
     }
+
+    
+    .sec3 .button,.section7 .Reviews button,.section6 .one div button, .WhyUs .content div button, .section5 .cont button{
+        padding: 10px 13px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        font-size: 12px;
+    }
+    
+    .WhyUs .content div button:last-child{
+        background-color: white;
+        color: black;
+        font-weight: bold;
+    }
+    
+    footer{
+        height: 18rem;
+    }
+    
+    .section8{
+        height: 18rem;
+    }
+    
+    .section7{
+        height: 30rem;
+    }
+    
     .section7 .last .reviewones img{
         height: 18rem;
     }
+
+    .section6{
+        height: 33rem;
+    }
+
+    .section6 .three{
+        width: 90%;
+    }
+
+    .section5{
+        height: 24rem;
+    }    
+
+    .section5 .image3 img{
+        position: relative;
+        height: 260px;
+        border-radius: 10px;
+    }
+
+    .section4{
+        height: 33rem;
+    }
+
+    .section4 .who{
+        gap: 8rem;
+    }
+
+    .section4 .who div{
+        width: 250px;
+    }
+
+    .section4 .who div img{
+        box-shadow: 2px 1px 10px black;
+        height: 250px;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .section4 .who div .blind{
+        padding: 8px;
+    }
+
+    .section3{
+        height: 33rem;
+    }
+
+    .section3 .second .right .uff div img{
+        height: 115px;
+    }   
+
+    .section3 .second .right .uff{
+        justify-content: space-between;
+    }
+
+    .section3 .second .right .uff .also{
+        padding-top: 15px;
+    }
+
+    .image{
+        height: 115px;
+    }
+
+    .image2{
+        height: 250px;
+    }
+
+    .section3 .second .right .image2 img{
+        height: 250px;
+    }
+
+    .section2{
+        height: 7rem;
+    }
+
+    .section1{
+        height: 28rem;
+    }
+
+    .navbar .sec1 img{
+        padding-left: 2rem;
+        height: 80px;
+    }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 768px) and (max-width:1024px) {
+
     body {
+        font-size: 12px;
+    }
+
+    .navbar .sec1 img{
+        padding-left: 2rem;
+        height: 65px;
+    }
+
+    .sec3 .button,.section7 .Reviews button, .WhyUs .content div button, .section5 .cont button, .section6 .one div button{
+        padding: 8px 10px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
         font-size: 10px;
+    }
+    
+    .WhyUs .content div button:last-child{
+        font-weight: bold;
+        background-color: white;
+        color: black;
+    }
+
+    .section3 .second .right .uff div img{
+        height: 100px;
+    }   
+
+    .section3 .second .right .uff{
+        justify-content: space-between;
+    }
+
+    .section3 .second .right .uff .also{
+        padding-top: 10px;
+    }
+
+    .image{
+        height: 100px;
+    }
+
+    .image2{
+        height: 210px;
+    }
+
+    .section3 .second .right .image2 img{
+        height: 210px;
+    }
+
+    .section4 .who{
+        gap: 4rem;
+    }
+
+    .section4 .who div{
+        width: 200px;
+    }
+
+    .section4 .who div img{
+        box-shadow: 2px 1px 10px black;
+        height: 220px;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .section4 .who div .blind{
+        padding: 5px;
+    }
+
+    .section5 .image3 img{
+        position: relative;
+        height: 220px;
+        border-radius: 10px;
+    }
+
+    .section6{
+        height: 30rem;
+    }
+    
+    .section6 .three{
+        width: 100%;
+    }
+
+    .section7 .last .reviewones img{
+        height: 16rem;
+    }
+    
+    .section7 .last .actualones>div{
+        width: 250px;
+        border-radius: 10px;
     }
 }
